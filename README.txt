@@ -14,7 +14,7 @@ Initial Setup and Deployment
 8. build docker image for app
     8a. > docker build -t localhost:5000/pyserver:0.1 .
 9. push docker image to local docker registry
-    9a. > docker push localhost:5000/pyserver:0.1
+    9a. > docker push localhost:5000/pyserver:0.1 or kind load docker-image localhost:5000/pyserver:0.1  
 10. create kind-ingress.yaml
 11. create local kind cluster 
      11a. > kind create cluster --config kind-ingress.yaml
